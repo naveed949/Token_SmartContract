@@ -56,6 +56,7 @@ contract Token is ERC20 {
   function withdraw(uint256 amount) public {
     require(deposits[msg.sender] >= amount, "insufficient funds deposited");
     // _transfer(admin, msg.sender, amount);
+    deposits[msg.sender] = deposits[msg.sender].sub(amount);
     pendingWithdrawals = pendingWithdrawals.add(1);
     withdraws[pendingWithdrawals] = Withdraw(msg.sender,amount);
     
