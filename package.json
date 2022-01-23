@@ -1,0 +1,23 @@
+{
+  "name": "plutus_task",
+  "version": "1.0.0",
+  "description": "this is and ERC20 token with deposit and withdrawal features",
+  "main": "truffle-config.js",
+  "scripts": {
+    "ganache": "ganache -m \"east space glide call dizzy card wrestle razor south open grab second\" -a 100 -b 15",
+    "test": "truffle test --network development"
+  },
+  "keywords": [
+    "deposit",
+    "withdrawal"
+  ],
+  "author": "naveed949",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.2",
+    "@truffle/hdwallet-provider": "^2.0.1",
+    "ethereumjs-tx": "^2.1.2",
+    "serve": "^13.0.2",
+    "truffle-assert": "^0.9.1"
+  }
+}
